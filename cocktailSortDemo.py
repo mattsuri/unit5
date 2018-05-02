@@ -1,5 +1,5 @@
-#Sam Smedinghoff
-#5/1/18
+#Matthew Suriawinata
+#5/2/18
 #sortingTemplate.py - times a sorting function
 
 from random import randint
@@ -8,6 +8,14 @@ from time import time
 N = 10 #how many numbers will be sorted
 
 def mySort(A):
+    swapped = True:
+        while swapped:
+            swapped = False
+            for i in range(0,len(A)-1)
+                if A[i] > A[i+1]:
+                    A[i], A[i+1] = A[i+1], A[i]
+    
+    
     return A
     
 if __name__ == '__main__':
