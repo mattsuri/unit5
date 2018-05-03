@@ -7,6 +7,29 @@ from time import time
 
 N = 10 #how many numbers will be sorted
 
+
+def gnomeSort(A):
+    pos = 0
+    while pos < len(A):
+        if (pos == 0 or A[pos] >= A[pos-1]):
+            pos = pos + 1
+        else:
+            A[pos], A[pos-1] = A[pos-1], A[pos]
+            pos = pos - 1
+
+    return(A)
+
+
+"""
+def bubblesort(A):
+    n = len(A)
+        
+    
+"""
+
+
+
+"""
 def mySort(A):
     swapped = True
     while swapped:
@@ -26,7 +49,10 @@ def mySort(A):
             
     
     return A
-    
+"""
+
+
+
 if __name__ == '__main__':
 
     #make a list of N random numbers between 1 and N
@@ -38,7 +64,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = numbers.sort()
+    numbers = gnomeSort(numbers)
     t2 = time()
     
     #print whether the sort worked or not
