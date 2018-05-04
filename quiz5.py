@@ -11,14 +11,14 @@ def penultimate(list):
 print(penultimate([3,4,5,6,7]))
 
 def plusEquals(numbers,integer):
-    i = 0
-    added = []
-    while i < len(numbers):
-        num = numbers[i] + integer
-        added.append(num)
+    i = 5
+
+    for i in range(0,len(numbers)):
+        numbers[i] = numbers[i] + integer
         i += 1
 
-        return(added)
+
+        return(numbers)
         
 print(plusEquals([1,2,3,4],10))
 
